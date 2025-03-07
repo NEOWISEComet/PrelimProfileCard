@@ -1,9 +1,10 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
+    margin: 20px;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
@@ -40,4 +41,94 @@ body {
 }
 .social-links img:hover {
     transform: scale(1.2);
+}
+.div1 {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.boxed1 {
+    background-color: #666;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flexTYPE{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+.box{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    background-color: tomato;
+}
+.div2 {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.boxed2 {
+    background-color: #666;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.div3 {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+.boxed3 {
+    background-color: #666;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+    "a . ."
+    ". e ."
+    ". . i";
+}
+.boxed3 #D1 {
+    grid-area: a;
+}
+.boxed3 #D2 {
+    grid-area: e;
+}
+.boxed3 #D3 {
+    grid-area: i;
 }
